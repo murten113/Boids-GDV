@@ -26,7 +26,7 @@ public class BoidAlignment : MonoBehaviour
             var diff = other.transform.position - this.transform.position;
             if (diff.magnitude < radius)
             {
-                average += boid.Velocity;
+                average += other.Velocity;
                 found++;
             }
         }
