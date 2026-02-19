@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 1577058583}
   - component: {fileID: 1577058584}
   m_Layer: 0
-  m_Name: GameManager
+  m_Name: BoidManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -471,8 +471,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4333112885376022748, guid: 268cea3b4525e2441ac44166cb0156dd, type: 3}
-  radius: 25
-  number: 100
+  radius: 15
+  number: 50
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -27,13 +27,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233426808212538288}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.70710677, w: 0.7071068}
-  m_LocalPosition: {x: 0.61, y: 0, z: 0}
+  m_LocalRotation: {x: 0.4999997, y: -0.4999997, z: -0.5000003, w: 0.50000036}
+  m_LocalPosition: {x: 0, y: -0, z: 0.73}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4396422657171327018}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: -90}
 --- !u!33 &9093155065654858351
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 8682170986703087397}
   - component: {fileID: 6786035131415458239}
   - component: {fileID: 1377508070371730371}
+  - component: {fileID: 8788913251076705718}
   m_Layer: 0
   m_Name: Boid
   m_TagString: Untagged
@@ -213,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9996c7a6480cb5f4a80259a96705513d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocity: {x: 1, y: 0, z: 0}
+  Velocity: {x: 0, y: 0, z: 0}
   maxVelocity: 2
 --- !u!114 &8682170986703087397
 MonoBehaviour:
@@ -253,5 +254,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42372087f0e3f14ba34a679a7071103, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
-  repulsionForce: 2
+  radius: 0.5
+  repulsionForce: 3
+--- !u!114 &8788913251076705718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4333112885376022748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 689def8cd94b6894282aa37e401edc23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 5
+  boundryForce: 0.5

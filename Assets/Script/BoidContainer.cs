@@ -9,6 +9,7 @@ using UnityEngine;
 public class BoidContainer : MonoBehaviour
 {
     private Boid boid;
+
     public float radius;
     public float boundryForce;
 
